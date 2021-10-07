@@ -1,0 +1,26 @@
+#define m_1 3
+#define m_2 4
+#define m_3 8
+#define m_4 9
+void setup()
+{
+  Serial.begin(9600);
+  pinMode(m_1,OUTPUT);
+  pinMode(m_2,OUTPUT);
+  pinMode(m_3,OUTPUT);
+  pinMode(m_4,OUTPUT);
+}
+
+void loop()
+{
+  digitalWrite(m_1,HIGH);
+  digitalWrite(m_2,LOW);
+  digitalWrite(m_3,HIGH);
+  digitalWrite(m_4,LOW);
+  delay(5000);
+  digitalWrite(m_2,HIGH);
+  digitalWrite(m_1,LOW);
+    digitalWrite(m_3,LOW);
+  digitalWrite(m_4,HIGH);
+  delay(5000);
+}
